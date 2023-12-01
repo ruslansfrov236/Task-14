@@ -24,6 +24,7 @@ namespace Task_14.Models.Customers.Entities
         [Required]
         [MaxLength(13)]
         [MinLength(13)]
+        [DataType(DataType.PhoneNumber)]
         [Phone]
         public string PhoneNumber { get; set; }
     }
